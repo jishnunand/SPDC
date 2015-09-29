@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	console.log("sdfdf");
+		console.log("log");
+		$.ajax({
+			method:"GET",
+			url:"http://localhost:9895/Original Code/NewFile.jsp"
+		});
+	console.log("after log");
+});

@@ -1,0 +1,4 @@
+echo %1 %2 >> C:\inputsms.txt
+
+
+Ch8n8ky856&

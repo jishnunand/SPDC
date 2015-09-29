@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" default-lazy="false">
+	
+	<class name="soft.sms.dao.hibernate.Login" table="logininfo">
+		<id name="id" column="id" type="java.lang.Long">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="loginId" column="loginid" type="java.lang.String" 
+		not-null="true" unique="true" length="20"></property>
+		
+		<property name="password" column="password" type="java.lang.String" 
+		not-null="true" length="20"></property>
+		
+	</class>
+	
+		
+</hibernate-mapping>

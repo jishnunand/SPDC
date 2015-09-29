@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="">
+<meta http-equiv="Reply-to" content="@.com">
+<meta name="generator" content="PhpED 8.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="creation-date" content="09/06/2012">
+<meta name="revisit-after" content="15 days">
+<title>SELL</title>
+<link rel="stylesheet" href="style2.css" type="text/css" /> 
+
+<script language="javascript">
+function check()
+{  
+    if( f1.item.value =="none")
+  {
+      alert("please Choose u r category")
+      f1.item.focus()
+      return false
+  }
+}
+</script>         
+</head>
+<body>   
+<h1>ONLINE AUCTION</h1>
+<hr size="4" style="border-color:silver;" style="border-color:silver;"/> <br><br><br>
+<div class="wrapper">
+<div class="content">
+<div id="form_wrapper" class="form_wrapper">
+
+<form class="login active" action="sell1.html" name="f1">  
+<h3>item details</h3>
+
+<div>
+ <label><b>USERNAME</b></label><input type="text" name="userid" required="" size="30" >
+</div>
+
+<div>
+<label><b>ITEMNAME</b></label><input type="text" name="iname" required="">
+</div>
+
+ <div>
+<label><b>ITEMPICS</b>
+<input type="file" name="pic1" required="" multiple>  
+</div>
+   
+<div>
+<label><b>ITEM DECRIPTION</b></label>
+<textarea cols="100" rows="5" required="" name="desc"></textarea>
+</div>
+
+<div>
+<label> <b>ITEM CATEGORY</b> </label>
+<select name="item">
+   <option selected value="none"> choose category</option>
+   <option>Electronics</option>
+   <option>furnitures</option>
+   <option>Vehicles</option>
+   <option>Antiques</option>
+   <option>Others</option>
+</select>
+</div>   
+   
+<div>
+<label> <b>FIXED PRICE</b> </label><input type="number" name="fixprice" required="">
+</div>
+
+<div>
+<label> <b>MIN BID</b></label>     <input type="number" name="minbid" required="">
+</div>
+
+<div>
+<label> <b>VALIDITY</b></label><input type="number" name="duration" required="">
+</div>
+
+<div>
+<label> <b>VALIDITY</b></label><input type="hidden" value="seller">
+</div>
+
+<div class="bottom">
+<input type="submit" value="POST" onclick="return check();">
+<div class="clear"></div>
+</div>   </center>
+</form>
+</div></div></div>
+
+  <a href="index.html"><b>HOMEPAGE</b></a>
+  
+  <marquee> <a href="index.html">For more info goto www.onlineauctions.com</a> </marquee>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="">
+<meta http-equiv="Reply-to" content="@.com">
+<meta name="generator" content="PhpED 8.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="creation-date" content="09/06/2012">
+<meta name="revisit-after" content="15 days">
+<title>Untitled</title>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script language="javascript">
+function check()
+{
+ 
+  if ( f1.pwd.value != f1.pwd2.value )
+  {
+     alert("Password And Confirm Passwords Are Not Matching!")
+     f1.pwd2.focus()
+     return false
+  }
+  
+  if( f1.state.value =="none")
+  {
+      alert("please Choose u r state")
+      f1.state.focus()
+      return false
+  }
+
+  if( f1.recov.value =="none")
+  {
+      alert("please Choose u r recovery question")
+      f1.recov.focus()
+      return false
+  }
+ 
+}
+</script>          
+</head>
+<body>  
+<h1>ONLINE AUCTION</h1>
+<hr size="4" style="border-color:silver;" style="border-color:silver;"/> <br><br><br>
+<div class="wrapper1">
+<div class="content">
+<div id="form_wrapper" class="form_wrapper">
+<form action="registration2.html"  name="f1" onsubmit="return check()" class="login active">
+<h3>REGISTRATION</h3>
+ <div>
+<label><b>USERNAME</b></label>
+<input type=text name=uname size=30 required=""></td>
+</div>
+
+<div>
+<label><b>PASSWORD</b></label>
+ <input type=password name=pwd size=30 required="">  
+</div>
+ 
+<div>
+<label><b>CONFIRM PASSWORD</b></label>
+<input type=password name=pwd2 size=30 required="">
+</div>
+
+<div> 
+ <label><b>FIRST NAME</b></label>
+<input type=text name=city size=30 required="">
+</div> 
+
+<div> 
+ <label><b>LAST NAME</b></label>
+<input type=text name=city size=30 required="">
+</div>
+
+<div>
+ <label><b>DOB</b></label>
+<input name="dob" type="date" data-date-inlinepicker="true" required="date"/>  
+</div>
+
+<div>
+ <label><b>EMAIL</b></label>
+<input type=email name=email size=30 required="">     
+</div>
+
+<div>
+ <label><b>PHONE</b></label>
+<input type=number name=phone size=30 required="">
+</div>
+
+<div>
+<label><b>ADDRESS</b></label>
+<textarea name=address cols=30 rows=5 required=""></textarea>  
+</div>
+
+
+<div>
+ <label><b>STATE</b></label> 
+<select name="state">
+<option selected value="none">Choose State </option>
+<option>ANDHRA PRADESH</option>
+<option>ARUNACHAL PRADESH</option>
+<option>ASSAM</option>
+<option>BIHAR</option>
+<option>CHHATISGARH</option>
+<option>GOA</option>
+<option>GUJARAT</option>
+<option>HARYANA</option>
+<option>HIMACHAL PRADESH</option>
+<option>JAMMU AND KASHMIR</option>
+<option>JHARKAND</option>
+<option>KARNATAKA</option>
+<option>KERALA</option>
+<option>MADHYA PRADESH</option>
+<option>MAHARASTRA</option>
+<option>MANIPUR</option>
+<option>MEGALAYA</option>
+<option>MIZORAM</option>
+<option>NAGALAND</option>
+<option>ORISSA</option>
+<option>PUNJAB</option>
+<option>RAJASTHAN</option>
+<option>SIKKIM</option>
+<option>TAMILNADU</option>
+<option>TELANGANA</option>
+<option>TRIPURA</option>
+<option>UTTARPRADESH</option>
+<option>UTTARAKAND</option>
+<option>WEST BENGAL</option>
+</select>
+</div>
+
+<div>
+ <label><b>CITY</b></label>
+<input type=text name=city size=30 required="">
+</div>
+
+<div>
+ <label><b>PHONENO</b></label>
+<input type=number name=pin size=30 required="">
+</div>
+
+<div>
+<label><b>RECOVERY QUESTION</b></label>
+
+<select name="recov">
+<option selected value="none">choose u r recovery question</option>
+<option>what is your father name</option>
+<option>what is your mother name</option>
+<option>which is your favourite color</option>
+<option>which is your favourite movie</option>
+ <option>who is your favourite cricketer</option>
+</select>
+
+</div>
+
+<div>
+<label><b>ANSWER</b></label>
+<input type=text name=answer size=30 required="">
+</div>
+
+<div class="bottom">
+<input type=submit value="Register" class="link form">  
+<input type=reset value="Reset">
+<div class="clear"></div>
+</div>
+
+ 
+</form>
+</div></div></div>
+
+
+<a href="index.html"><b>HOMEPAGE</b></a>
+ <marquee> <a href="index.html">For more info goto www.onlineauctions.com</a> </marquee>
+</body>
+</html>

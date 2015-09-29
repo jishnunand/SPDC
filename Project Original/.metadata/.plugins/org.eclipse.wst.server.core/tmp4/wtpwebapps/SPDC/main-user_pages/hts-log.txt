@@ -1,0 +1,15 @@
+HTTrack3.48-21+htsswf+htsjava launched on Wed, 06 May 2015 12:22:17 at https://pgi.billdesk.com/pgidsk/ProcessPayment;jsessionid=0000DTnU4GsIraiuc3U_W_DAmil:17lenr4ap?wpage=Pdb7FXoIhibP3jnXYgWpiQkv +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://pgi.billdesk.com/pgidsk/ProcessPayment;jsessionid=0000DTnU4GsIraiuc3U_W_DAmil:17lenr4ap?wpage=Pdb7FXoIhibP3jnXYgWpiQkv -O1 "C:\My Web Sites\aaaa" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:22:32	Error: 	"Not Found" (404) at link https://pgi.billdesk.com/pgmerc/bdqp/resources/img/ajax-loader1.gif (from https://pgi.billdesk.com/pgmerc/bdqp/resources/style/billdesk.min.css?ver=1.1)
+12:22:32	Error: 	"Not Found" (404) at link https://pgi.billdesk.com/pgmerc/bdqp/resources/img/blur-background09.jpg (from https://pgi.billdesk.com/pgmerc/bdqp/resources/style/billdesk.min.css?ver=1.1)
+12:22:37	Error: 	"Not Found" (404) at link https://pgi.billdesk.com/pgmerc/storecard/resources/images/demo/qp_screen.jpg (from https://pgi.billdesk.com/pgmerc/bdqp/resources/scripts/BDCommon.js?ver=1.3.1)
+12:22:37	Error: 	"Not Found" (404) at link https://pgi.billdesk.com/pgmerc/storecard/resources/images/demo/savecard_screen.jpg (from https://pgi.billdesk.com/pgmerc/bdqp/resources/scripts/BDCommon.js?ver=1.3.1)
+
+HTTrack Website Copier/3.48-21 mirror complete in 20 seconds : 34 links scanned, 29 files written (598863 bytes overall) [233498 bytes received at 11674 bytes/sec], 518014 bytes transferred using HTTP compression in 13 files, ratio 24%, 6.8 requests per connection
+(4 errors, 0 warnings, 0 messages)

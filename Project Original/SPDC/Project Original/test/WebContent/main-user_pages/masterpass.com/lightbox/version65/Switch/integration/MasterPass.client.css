@@ -1,0 +1,115 @@
+
+/**********************************/
+/******** MasterPass Shell ********/
+/**********************************/
+#MasterPass_overlay {
+	background: #000;
+	bottom: 0;
+	display: block;
+	left: 0;
+	opacity: .7;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1000000;
+	filter: alpha(opacity = 70);
+	zoom:1;
+}
+
+#MasterPass_container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000001;
+	overflow: auto;	
+	-webkit-overflow-scrolling: touch;
+}
+
+/* #MasterPass_frame {
+	background: transparent;
+	display: block;
+	height: 740px;
+	left: 50%;
+	margin: -370px 0 0 -350px;
+	position: fixed;
+	top: 50%;
+	width: 700px;
+	z-index: 10000001;
+	border: none;
+} */
+
+#MasterPass_frame {
+	background: transparent;
+	display: block;
+	height: 740px;
+	left: 50%;
+	margin: -370px 0 0 -350px;
+	position: absolute;
+	top: 50%;
+	width: 700px;
+	z-index: 10000001;
+	border: none;
+}
+
+
+
+/* Responsive styling for smaller screens */
+/****************************************************************/
+
+	
+/*@media screen and (max-width:679px), screen and (max-height:739px) {
+
+
+	#MasterPass_frame {
+    	background: transparent;
+    	display: block;
+    	height: 620px;
+    	left: 50%;
+    	margin: -310px 0 0 -350px;
+    	position: fixed;
+    	top: 50%;
+    	width: 700px;
+    	z-index: 10000001;
+    	border: none;
+    }
+	
+} */
+@media screen and (max-height: 800px) {
+
+	#MasterPass_frame {
+	    height: 620px;
+	    margin: -310px 0 0 -350px;
+	}
+}
+
+@media screen and (max-height: 620px){
+	#MasterPass_frame {
+		margin-top: 0;
+		top: 5px;
+	}
+}
+
+
+@media screen and (max-width:679px) {
+	#MasterPass_frame {
+		width: 100%;
+		min-width: 320px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		margin: 0;
+		position: fixed;
+	}
+}
+
+body.MasterPass_modal-open {
+	position: fixed;
+	overflow: hidden;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:0;
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;logout.jsp&apos; to &apos;main-user_pages&apos;&#x0D;&#x0A;- Original project: &apos;Original Code&apos;&#x0D;&#x0A;- Destination element: &apos;main-user_pages&apos;&#x0D;&#x0A;- Original element: &apos;logout.jsp&apos;" description="Copy file" element1="WebContent/main-admin_pages/logout.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1432966413707" target="/Original Code/WebContent/main-user_pages" units="0" version="1.0"/>
+</session>

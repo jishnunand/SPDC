@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from pgi.billdesk.com/pgidsk/ProcessPayment;jsessionid=0000DTnU4GsIraiuc3U_W_DAmil:17lenr4ap?wpage=Pdb7FXoIhibP3jnXYgWpiQkv by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 May 2015 06:52:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=iso-8859-1" /><!-- /Added by HTTrack -->
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content=""/>
+    <title>BillDesk - All Your Payments. Single Location</title>
+   <!-- <link type="text/css" rel="stylesheet" href="../../pgmerc/bdqp/resources/style/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="../../pgmerc/bdqp/resources/style/globalpayment.css?ver=1.1" />
+    <link type="text/css" rel="stylesheet" href="../../pgmerc/bdqp/resources/style/layout.css?ver=1.0" /> -->
+    <link type="text/css" rel="stylesheet" href="../pgmerc/bdqp/resources/style/billdesk.min4963.css?ver=1.1" />
+    <link type="text/css" rel="stylesheet" href="../pgmerc/merchantui/billdeskui.css" />
+    <link rel="icon" href="https://pgi.billdesk.com/pgmerc/bdqp/resources/images/favicon.ico" type="image/x-icon" />
+	 <!-- <script src="../../pgmerc/bdqp/resources/scripts/lib/jquery-1.9.1.min.js"></script>-->
+	<script src="../pgmerc/bdqp/resources/scripts/lib/billdesk.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../pgmerc/bdqp/resources/scripts/lib/html5shiv.js"></script>
+      <script src="../../pgmerc/bdqp/resources/scripts/lib/respond.min.js"></script>
+    <![endif]-->
+
+	<!--[if IE 7]>
+        <link type="text/css" rel="stylesheet" href="../../pgmerc/bdqp/resources/style/bootstrap-responsive-ie7.css" />
+        <link type="text/css" rel="stylesheet" href="../../pgmerc/bdqp/resources/style/font-awesome-ie7.min.css" />
+    <![endif]-->
+	
+</head>
+<body class="skin-blue">
+<form name="form1" id="form1" action="#" method="post">
+
+<nav class="navbar-top">
+<div class="navbar-header ">
+	<img alt="" class="mercLogo" src="../pgmerc/pgimages/images/Kerala_Logo.png" />
+	<a id="slideMenu" class="nav navbar-nav sidebar-toggle" data-toggle="offcanvas" href="javascript:void(0);"><em class="fa fa-bars"></em></a>
+    <span class="navbar-brand" href="javascript:void(0);">&nbsp;</span>
+</div>
+</nav>
+
+
+<div class="clearfix"></div>
+<div class="container container-holder">
+<div class="wrapper row-offcanvas row-offcanvas-left">
+<div class="row">
+<div class="col-md-3 col-md-push-9 parametersection">
+    <div class="box box-primary"><div class="box-header">
+    <h5><strong>Merchant Name</strong></h5>
+    <h3 class="box-title"> Kerala State Road Transport Corporation</h3>
+    </div>
+    <div class="panel-footer">Reference ID: &nbsp;<strong>KL305188</strong><br>Payment Amount: &nbsp;<strong><i class="fa fa-inr"></i>423.00</strong></div>
+    </div>
+	<div class="clearfix"></div>
+	
+<img src="../pgmerc/bdqp/resources/images/visa-banner.png" alt="" class="img-responsive-banner">
+
+</div> <!-- Right Transaction Detail Column-->
+
+<div class="col-md-9 col-md-pull-3" id="main-container">
+	
+
+
+
+<script>$(document).ready(function() {
+	//Default Action
+	$(".tab_content, #qpLogin, #proceedForm").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	//On Click Event
+	$("ul.tabs li").click(function(event) { event.preventDefault();
+	$('div#accordion div.panel h4.panel-title input[type=radio]').prop('checked', false);
+	$('div.row-offcanvas-left').removeClass('active relative');
+	$("#CCDetails").hide();
+	$("#SPDControlType").hide();					// Hides SBI Card Type selection
+	//$("#controlcardtype li").removeClass(); 		// Clear SBI Card type selection on tab load.	 
+	$("#StoreCardDetails").hide();
+	$("#AM2Details").hide(); 
+	$("#VDCDetails").hide(); 
+	$("#EMIDetails").hide();
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		//alert($("this.find").index);
+		$(".tab_content").hide(); //Hide all tab content
+		//$(".tab_content").find('input', 'select').attr('checked', 'checked');
+		$(".tab_content").find('select').attr('value','0');
+		$(".tab_content").find('input[type=text] , input[type=password]').attr('value','');
+		$(".tab_content").find('input[type=checkbox]').prop('checked', false);
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		blockName = $(this).find("a").attr("href").replace(/^#/, '');
+		$(activeTab).show(); //Fade in the active content
+		var ecard = $(this).attr('id'); 
+		//if(ecard == "easyPay") { document.form1.txtBankIDSC.value="easyPay";} else { document.form1.txtBankIDSC.value=""; }
+return false;
+
+}); });
+/*function cancelForm(){ var issubmit=false;
+if (issubmit !=true){ issubmit=true; document.form1.txtItemCode.value="DIRECT"; document.form1.reqid.value="cc_cancelall"; 
+document.form1.action="https://"+baseURL[0]+".billdesk.com/pgidsk/PGICommonGateway"; $('input[name=btnsubmit]').prop('disabled', 'disabled');
+document.form1.submit();
+}else { alert("Please wait while we are processing your request."); }
+return false;
+}*/
+var mercPriGate = ""; mercPriGate='UPG';
+var isCustIdUnique = ""; isCustIdUnique = 'Y'; var isTrnAmount = ""; isTrnAmount = '423.00'; var isCsMsgMerc = ""; isCsMsgMerc = 'N';
+var isQPAllowed = ""; 	isQPAllowed = false;
+var isCCAllowed = {}; 	isCCAllowed = {'visa':true,'master':true,'amex':false,'diners':false}; 
+var isCCDCAllowed = ""; isCCDCAllowed = true; var qpProdId = ""; qpProdId = "DIRECT";
+var isSICCAllowed = ""; isSICCAllowed = false;
+var isCCAXAllowed = ""; isCCAXAllowed = false;
+var AmExBKID = ""; AmExBKID = "";
+
+</script>
+<aside class="left-side sidebar-offcanvas">
+	<section class="sidebar">
+        <ul class="tabs sidebar-menu">
+
+
+
+        <li> <a data-value="txtBankIDCC-CARD" href="#tab2"><i class="fa fa-credit-card fa-fw"></i><span>Credit Card</span> </a></li>
+
+
+        <li> <a data-value="txtBankIDDC-CARD" href="#tab3"><i class="fa fa-credit-card fa-fw"></i><span>Debit Card</span> </a></li>
+
+
+        <li> <a data-value="txtBankIDAM-CARD" href="#tab4"><i class="fa fa-credit-card fa-fw"></i><span>Debit Card + ATM PIN</span> </a></li>
+
+
+        <li> <a data-value="txtBankIDBK-OTHER" href="#tab5"><i class="fa fa-home fa-fw"></i><span>Internet Banking</span> </a></li>
+
+
+
+
+
+
+
+
+	</ul>
+<ul class="pager"><li class="previous"><a class="abort" onclick="cancelForm();"><i class="fa fa-chevron-left"></i> Click here to abort transaction and go back to merchant site</a></li></ul>
+    </section>
+</aside>
+
+<aside class="right-side">
+
+
+<div id="tab2" class="tab_content"> 
+	<div class="page-header">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-value="CARD-DIRECT" data-toggle="tab" href="#payCreditCard">Pay by Credit Card</a></li>
+            
+        </ul>
+    </div>   
+    
+    <div class="panel panel-default"><div class="panel-body" id="cccard" >
+    	<div class="tab-content">
+            <div id="payCreditCard" class="tab-pane active">
+                
+                    <center>
+<img src="../pgmerc/bdqp/resources/images/vmc.png">
+
+  
+                    <br><br></center>
+                    <div class="carddetailform" id="CardForm" data-name='CardForm'></div>
+                    <div id="AmExTble"></div>
+                    <div class="clearfix"></div>
+            </div> <!-- credit Card Tab -->
+          <div id="payAmexEzeClick" class="tab-pane"> 
+            <div id="BankLogo"><div class="col-xs-6 col-sm-2" style="width:180px; min-height:70px; float:none;">
+            <label style="border:0px;"><input checked type="radio"><img data-bank="AEC-DIRECT" src="../pgmerc/pgimages/images/banklogo/aec.png"></label></div>
+    <br clear="all"><br clear="all"></div>
+          </div> <!-- AmexExeClick Tab -->
+    </div> 
+    </div></div> <!-- Panel Body -->
+</div> <!-- Content Tab 2[Credit Card] ends here -->
+
+
+
+<div id="tab3" class="tab_content"> 
+<h4>Pay using Debit Card <!--<small>See list of supported Debit Cards</small>--></h4>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        <a><label><input type="radio" class="floatl topPos" id="ATM" value="ATM" name="debittype"> Pay by ATM-cum-Debit Card <small  class="text-blue">(Use your ATM PIN)</small></label></a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+          <div id="atm" class="panel-body">
+          <div class="page-header text-muted">Please select your bank from the list below. </div>
+            <div class="form-group">
+            <select value="0" class="form-control" id="txtBankIDDC" name="txtBankIDDC">
+                <option disabled="" value="">-------------------</option>
+                <option selected="selected" disabled="" value="0">Select Bank</option>
+                <option disabled="" value="">-------------------</option>
+<option class="padl5" value="BMD-DIRECT">Bank of Maharashtra</option>
+
+<option class="padl5" value="CTR-DIRECT">Bank of India</option>
+<option class="padl5" value="CND-DIRECT">Canara Bank</option>
+
+<option class="padl5" value="IOD-DIRECT">Indian Overseas Bank</option>
+
+<option class="padl5" value="RSD-DIRECT">Rajasthan State Co-op Bank</option>
+<option class="padl5" value="SHD-DIRECT">Shivalik Bank</option>
+<option class="padl5" value="UDC-DIRECT">Union Bank of India</option>
+                </select>
+               </div>
+
+		<div class="carddetailform" id="CardForm" data-name='CardForm'></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+		<a><label><input type="radio" class="floatl" id="VisaMaster" value="VisaMaster" name="debittype"> Pay by <img src="../pgmerc/bdqp/resources/images/debitvisamaster.png"> <small class="text-blue">(Use your VBV/MSC password)</small></label></a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body" id="vmm">
+       <div class="form-group crdno">
+       	<label class="control-label" for="txtBankIDDC">Select Debit Card</label>
+        <select id="txtBankIDDC" class="form-control" name="txtBankIDDC">
+<option class="padl5 heading" value="0" disabled="">== Top Banks ==</option>
+<option class="padl5" value="0" disabled="">-------------------</option>
+
+<option class="padl5" value="CARD-DIRECT">Axis Bank</option>
+
+
+<option class="padl5" value="CARD-DIRECT">HDFC Bank</option>
+<option class="padl5" value="CARD-DIRECT">ICICI Bank</option>
+
+<option class="padl5" value="SMP-DIRECTD">State Bank of India Group</option>
+
+
+
+<option class="padl5" value="0" disabled="">-------------------</option>
+<option class="padl5 heading" value="0" disabled="">== Other Banks ==</option>
+<option class="padl5" value="0" disabled="">-------------------</option>
+
+<option class="padl5" value="CARD-DIRECT">Allahabad  Bank</option>
+<option class="padl5" value="CARD-DIRECT">Andhra Bank</option>
+<option class="padl5" value="CARD-DIRECT">Axis Bank</option>
+<option class="padl5" value="CARD-DIRECT">Bank of Baroda</option>
+
+
+<option class="padl5" value="CTR-DIRECT">Bank of India</option>
+<option class="padl5" value="BMD-DIRECT">Bank of Maharashtra</option>
+
+<option class="padl5" value="CARD-DIRECT">Barclays Bank Plc</option>
+<option class="padl5" value="CARD-DIRECT">Bharat Co-operative Bank</option>
+
+<option class="padl5" value="CND-DIRECT">Canara Bank</option>
+
+<option class="padl5" value="CARD-DIRECT">Central Bank of India</option>
+
+
+
+<option class="padl5" value="CARD-DIRECT">City Union Bank </option>
+<option class="padl5" value="CARD-DIRECT">Corporation Bank </option>
+<option class="padl5" value="CARD-DIRECT">Cosmos Bank </option>
+<option class="padl5" value="CARD-DIRECT">DBS Bank</option>
+<option class="padl5" value="CARD-DIRECT">DCB Bank </option>
+<option class="padl5" value="CARD-DIRECT">Dena Bank</option>
+<option class="padl5" value="CARD-DIRECT">Deutsche Bank AG </option>
+<option class="padl5" value="CARD-DIRECT">Dhanlaxmi Bank </option>
+<option class="padl5" value="CARD-DIRECT">Federal Bank</option>
+<option class="padl5" value="CARD-DIRECT">FirstRand Bank</option>
+<option class="padl5" value="CARD-DIRECT">GE Money Financial Services</option>
+<option class="padl5" value="CARD-DIRECT">HDFC Bank</option>
+<option class="padl5" value="CARD-DIRECT">HSBC</option>
+<option class="padl5" value="CARD-DIRECT">ICICI Bank</option>
+<option class="padl5" value="CARD-DIRECT">IDBI Bank</option>
+<option class="padl5" value="CARD-DIRECT">Indian Bank</option>
+
+<option class="padl5" value="IOD-DIRECT">Indian Overseas Bank</option>
+
+<option class="padl5" value="CARD-DIRECT">Indusind Bank</option>
+<option class="padl5" value="CARD-DIRECT">ING Vysya Bank (Now Kotak Bank)</option>
+<option class="padl5" value="CARD-DIRECT">Karnataka Bank</option>
+<option class="padl5" value="CARD-DIRECT">Karur Vysya Bank</option>
+<option class="padl5" value="CARD-DIRECT">Kotak Bank</option>
+<option class="padl5" value="CARD-DIRECT">Lakshmi Vilas Bank</option>
+
+
+<option class="padl5" value="CARD-DIRECT">New India Cooperative Bank</option>
+<option class="padl5" value="CARD-DIRECT">NKGSB Cooperative Bank Ltd.</option>
+<option class="padl5" value="CARD-DIRECT">Oriental Bank of Commerce</option>
+<option class="padl5" value="CARD-DIRECT">Punjab &amp; Maharashtra Co-op Bank</option>
+
+<option class="padl5" value="CARD-DIRECT">Punjab National Bank</option>
+
+<option class="padl5" value="RSD-DIRECT">Rajasthan State Co-op Bank</option>
+
+<option class="padl5" value="CARD-DIRECT">Ratnakar Bank</option>
+<option class="padl5" value="CARD-DIRECT">RBS (The Royal Bank of Scotland)</option>
+<option class="padl5" value="CARD-DIRECT">Saraswat Bank</option>
+<option class="padl5" value="CARD-DIRECT">Shamrao Vithal Co-operative Bank</option>
+
+<option class="padl5" value="SHD-DIRECT">Shivalik Bank</option>
+
+<option class="padl5" value="CARD-DIRECT">South Indian Bank</option>
+<option class="padl5" value="CARD-DIRECT">Standard Chartered Bank</option>
+
+<option class="padl5" value="SMP-DIRECTD">State Bank of India Group</option>
+
+<option class="padl5" value="CARD-DIRECT">Syndicate Bank</option>
+<option class="padl5" value="CARD-DIRECT">Tamilnad Mercantile Bank</option>
+<option class="padl5" value="CARD-DIRECT">TJSB Sahakari Bank</option>
+<option class="padl5" value="CARD-DIRECT">UCO Bank</option>
+
+<option class="padl5" value="UDC-DIRECT">Union Bank of India</option>
+
+<option class="padl5" value="CARD-DIRECT">United Bank of India</option>
+<option class="padl5" value="CARD-DIRECT">Vijaya Bank</option>
+<option class="padl5" value="CARD-DIRECT">YES Bank</option>
+<option class="padl5" value="CARD-DIRECT">All Other Banks</option>
+
+</select>
+       </div>
+      	
+        <div class="carddetailform" id="CardForm" data-name='CardForm'></div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <a><label><input type="radio" class="floatl topPos" id="Rupay" value="URP-DIRECT" name="debittype"> Pay by  <img src="../pgmerc/bdqp/resources/images/debitrupay.png"></label></a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+  	<div class="panel-body">
+    <div class="page-header text-muted">List of Supported Banks. </div>
+    <ul>
+    <li>Andhra Bank</li>
+    <li>Axis Bank</li>
+    <li>Bank Of Baroda</li>
+    <li>Bank Of India</li>
+    <li>Bank Of Maharashtra</li>
+    <li>Canara Bank</li>
+    <li>Dena Bank</li>
+    <li>Dombivli Nagarik Sahakari Bank</li>
+    <li>Federal Bank</li>
+    <li>Gp Parsik  Patil Janata Sahakari Bank</li>
+    <li>Gujarat State Co-Operative Bank Ltd</li>
+    <li>HDFC Bank</li>
+    <li>ICICI Bank</li>
+    <li>IDBI Bank</li>
+    <li>Indian Bank</li>
+    <li>Indian Overseas Bank</li>
+    <li>IndusInd Bank Ltd</li>
+    <li>Janata Sahakari Bank</li>
+    <li>Municipal Co-Operative Bank Mumbai</li>
+    <li>Nutan Nagarik Sahakari Bank</li>
+    <li>Oriental Bank Of Commerce</li>
+    <li>Punjab National Bank</li>
+    <li>Saraswat Co-Operative Bank Ltd</li>
+    <li>State Bank Of India</li>
+    <li>Surat Peoples' Co-Operative Bank </li>
+    <li>The Bharat Co-Operative Bank Ltd. Mumbai</li>
+    <li>The Cosmos Cooperative Bank Ltd</li>
+    <li>The Kalupur Commercial Co-Operative Bank Ltd</li>
+    <li>Thrissur District Central Co-Operative Bank</li>
+    <li>UCO Bank</li>
+    <li>Union Bank Of India</li>
+    <li>United Bank of India</li>
+    <li>Vijaya Bank</li>
+    </ul>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+</div> <!-- Content Tab 3[Debit Card] ends here -->
+
+
+
+<div id="tab4" class="tab_content">
+<h4>Pay using ATM-cum-Debit Card <small class="text-blue">(Use your ATM PIN)</small></h4>
+<p class="page-header text-muted" >Please select your ATM-cum-Debit Card from the list below.</p>
+<div class="form-group">
+<select id="txtBankIDDC" name="txtBankIDDC" class="form-control">
+<option class="padl5 heading" value="0" selected="selected">Select Bank</option>
+<option class="padl5" value="0" disabled="">-------------------</option>
+<option class="padl5" value="BMD-DIRECT">Bank of Maharashtra</option>
+
+<option class="padl5" value="CTR-DIRECT">Bank of India</option>
+<option class="padl5" value="CND-DIRECT">Canara Bank</option>
+
+<option class="padl5" value="IOD-DIRECT">Indian Overseas Bank</option>
+
+
+<option class="padl5" value="RSD-DIRECT">Rajasthan State Co-op Bank</option>
+<option class="padl5" value="SHD-DIRECT">Shivalik Bank</option>
+<option class="padl5" value="UDC-DIRECT">Union Bank of India</option>
+</select>
+</div>
+<div class="carddetailform" id="CardForm" data-name='CardForm'></div>
+<div class="clearfix"></div><br>
+</div> <!-- Content Tab 5[ATM-cum-Debit Card] ends here -->
+
+
+
+<div id="tab5" class="tab_content"> 
+<h4>Pay using Internet Banking</h4>
+<div class="row">
+<div class="col-xs-12" id="BankLogo">
+      
+      <div class="col-xs-6 col-sm-2"><label><input type="radio" value="UTI-DIRECT" id="AxisNet" name="netbank">
+      <img src="../pgmerc/pgimages/images/banklogo/uti.gif" data-bank="UTI-DIRECT"/></label></div>
+      
+      
+      
+      <div class="col-xs-6 col-sm-2"><label><input type="radio" value="HDF-DIRECT" id="HDFCNet" name="netbank">
+      <img src="../pgmerc/pgimages/images/banklogo/hdf.gif" data-bank="HDF-DIRECT"/></label></div>
+      
+      
+      
+      <div class="col-xs-6 col-sm-2"><label><input type="radio" value="ICI-DIRECT" id="ICICINet" name="netbank">
+      <img src="../pgmerc/pgimages/images/banklogo/ici.gif" data-bank="ICI-DIRECT"/></label></div>
+      
+      
+      
+      <div class="col-xs-6 col-sm-2"><label><input type="radio" value="162-DIRECT" id="KotakNet" name="netbank">
+      <img src="../pgmerc/pgimages/images/banklogo/162.gif" data-bank="162-DIRECT"/></label></div>
+      
+      
+      
+      <div class="col-xs-6 col-sm-2"><label><input type="radio" value="SBI-DIRECT" id="SBINet" name="netbank">
+      <img src="../pgmerc/pgimages/images/banklogo/sbi.gif" data-bank="SBI-DIRECT"/></label></div>
+      
+ </div>     
+    </div>
+<div class="clearfix"></div><br>
+<h4>All Banks</h4>
+<select id="txtBankIDBK" name="txtBankIDBK" class="form-control">
+<option selected="selected" disabled="" value="0" class="padl5 heading">== Select your Bank ==</option>
+<option disabled="" value="" class="padl5">-------------------</option>
+<option class="padl5" value="ALB-DIRECT">Allahabad Bank</option>
+<option class="padl5" value="ADB-DIRECT">Andhra Bank</option>
+<option class="padl5" value="UTI-DIRECT">Axis Bank [Retail]</option>
+
+<option class="padl5" value="BBK-DIRECT">Bank of Bahrain and Kuwait</option>
+<option class="padl5" value="BBC-DIRECT">Bank of Baroda [Corporate]</option>
+<option class="padl5" value="BBR-DIRECT">Bank of Baroda [Retail]</option>
+<option class="padl5" value="BOI-DIRECT">Bank of India</option>
+<option class="padl5" value="BOM-DIRECT">Bank of Maharashtra</option>
+
+<option class="padl5" value="CNB-DIRECT">Canara Bank</option>
+<option class="padl5" value="CSB-DIRECT">Catholic Syrian Bank</option>
+<option class="padl5" value="CBI-DIRECT">Central Bank of India</option>
+
+<option class="padl5" value="CUB-DIRECT">City Union Bank</option>
+<option class="padl5" value="CRP-DIRECT">Corporation Bank</option>
+<option class="padl5" value="COB-DIRECT">Cosmos Bank</option>
+<option class="padl5" value="DC2-DIRECT">DCB BANK Business</option>
+<option class="padl5" value="DCB-DIRECT">DCB BANK Personal </option>
+<option class="padl5" value="DEN-DIRECT">Dena Bank</option>
+<option class="padl5" value="DBK-DIRECT">Deutsche Bank</option>
+<option class="padl5" value="DLB-DIRECT">Dhanlaxmi Bank</option>
+<option class="padl5" value="FBK-DIRECT">Federal Bank</option>
+<option class="padl5" value="HDF-DIRECT">HDFC Bank Limited</option>
+
+<option class="padl5" value="ICI-DIRECT">ICICI Bank</option>
+
+
+<option class="padl5" value="IDB-DIRECT">IDBI Bank [Retail]</option>
+<option class="padl5" value="INB-DIRECT">Indian Bank</option>
+<option class="padl5" value="IOB-DIRECT">Indian Overseas Bank</option>
+<option class="padl5" value="IDS-DIRECT">IndusInd Bank</option>
+<option class="padl5" value="ING-DIRECT">ING Vysya Bank (Now Kotak Bank)</option>
+<option class="padl5" value="JKB-DIRECT">Jammu and Kashmir Bank</option>
+<option class="padl5" value="JSB-DIRECT">Janata Sahakari Bank</option>
+<option class="padl5" value="KBL-DIRECT">Karnataka Bank</option>
+<option class="padl5" value="KVB-DIRECT">Karur Vysya Bank</option>
+<option class="padl5" value="162-DIRECT">Kotak Bank</option>
+<option class="padl5" value="LVC-DIRECT">Lakshmi Vilas Bank [Corporate]</option>
+<option class="padl5" value="LVR-DIRECT">Lakshmi Vilas Bank [Retail]</option>
+<option class="padl5" value="NKB-DIRECT">NKGSB Bank</option>
+<option class="padl5" value="OBC-DIRECT">Oriental Bank of Commerce</option>
+<option class="padl5" value="PMC-DIRECT">Punjab &amp; Maharashtra Co-operative Bank</option>
+<option class="padl5" value="PSB-DIRECT">Punjab and Sind Bank</option>
+<option class="padl5" value="CPN-DIRECT">Punjab National Bank [Corporate]</option>
+<option class="padl5" value="PNB-DIRECT">Punjab National Bank [Retail]</option>
+
+<option class="padl5" value="RTN-DIRECT">Ratnakar Bank</option>
+<option class="padl5" value="RBS-DIRECT">RBS (The Royal Bank of Scotland)</option>
+<option class="padl5" value="SWB-DIRECT">Saraswat Bank</option>
+
+<option class="padl5" value="SVC-DIRECT">Shamrao Vithal Co-op. Bank [Retail]</option>
+<option class="padl5" value="SIB-DIRECT">South Indian Bank Ltd</option>
+<option class="padl5" value="SCB-DIRECT">Standard Chartered Bank  [Retail]</option>
+<option class="padl5" value="SBJ-DIRECT">State Bank of Bikaner and Jaipur</option>
+<option class="padl5" value="SBH-DIRECT">State Bank of Hyderabad</option>
+<option class="padl5" value="SBI-DIRECT">State Bank of India</option>
+<option class="padl5" value="SBM-DIRECT">State Bank of Mysore</option>
+<option class="padl5" value="SBP-DIRECT">State Bank of Patiala</option>
+
+<option class="padl5" value="SBT-DIRECT">State Bank of Travancore</option>
+<option class="padl5" value="SYD-DIRECT">Syndicate Bank</option>
+<option class="padl5" value="TMB-DIRECT">Tamilnad Mercantile Bank</option>
+<option class="padl5" value="TNC-DIRECT">TNSC Bank</option>
+<option class="padl5" value="UCO-DIRECT">UCO Bank</option>
+<option class="padl5" value="UBI-DIRECT">Union Bank of India</option>
+<option class="padl5" value="UNI-DIRECT">United Bank of India</option>
+<option class="padl5" value="VJB-DIRECT">Vijaya Bank</option>
+<option class="padl5" value="YBK-DIRECT">YES Bank</option>
+</select>
+<div class="clearfix"></div><br>
+</div> <!-- Content Tab 4[Internet Banking] ends here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="tab_content" id="CancelTab" style="display: none;">
+<h4 class="text-danger">Please provide us some feedback</h4>
+<p class="page-header text-muted">You have chosen to abort this transaction. Could you please tell us why?</p>
+
+<div class="form-group">
+    <div class="col-sm-10" style=" padding-left:0px;">
+    	<div class="checkbox"><label><input name="fdOpt" type="checkbox" value="I cannot find my bank payment option">I cannot find my bank payment option</label></div>
+		<div class="checkbox"><label><input name="fdOpt" type="checkbox" value="I dont remember my 2nd factor password">I don't remember my 2nd factor password</label></div>
+        <div class="checkbox"><label><input name="fdOpt" type="checkbox" value="My browser is not loading properly">My browser is not loading properly</label></div>
+        <div class="checkbox"><label><input name="fdOpt" type="checkbox" value="I do not wish to complete this payment right now">I do not wish to complete this payment right now</label></div>
+        <div class="checkbox"><label><input name="fdOpt" type="checkbox" value="other">Any other reason</label>
+        					  <textarea name="otherReason" id="otherReason" class="form-control disabled" disabled="disabled" rows="2" style="margin-left:17px; margin-top:7px" placeholder="Please specify a reason within 30 characters"></textarea>
+        </div>
+    </div>
+</div>
+<br clear="all">
+
+<p class="text-muted" style="color:#107EAD; font-size:13px; font-weight:700;">Please provide your email id and mobile number to support you further:</p>
+
+<div class="well well-sm">
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+    <label class="control-label" for="custemail">Email address</label>
+    <input type="email" class="form-control" id="custemail" name="custemail" placeholder="Enter email">
+</div>
+</div>
+
+<div class="col-md-6">
+<div class="form-group">
+    <label class="control-label" for="custmobile">Mobile Number</label>
+    <input type="tel" class="form-control" id="custmobile" name="custmobile" maxlength="10"  placeholder="Enter mobile">
+</div>
+</div>
+
+<br clear="all">
+
+</div>
+</div>
+
+<div id="userBtnOption">
+<button id="fdbCancel" class="btn col-xs-12 col-md-12 btn-lg btn-danger" data-loading-text="Please wait..." data-tab="" type="button"> Abort Transaction</button>
+<a id="fdbContinue" class="pull-right">Continue Transaction</a>
+</div>
+
+
+
+<!--<div class="col-md-5 col-xs-6"><button class="btn btn-danger">Continue Transaction</button></div>
+<div class="col-md-6 col-xs-6"><button class="btn btn-default" style="color:#1F78B2;"><i class="fa fa-times"></i> Cancel Transaction</button></div>-->
+
+<div class="clearfix"></div><br>
+</div>
+
+
+<!-- Left Tabbular Column-->
+
+
+
+
+<div class="box-footer">
+<button type="button" data-loading-text="<i class='fa fa-check fa-fw pull-left'></i>  Please wait..." class="btn col-xs-12 col-md-12 btn-lg btn-danger" onclick="validateBDPGPayment()" id="proceedForm" > Make Payment</button>
+
+<a id="goBackMobile" class="pull-right mobile sidebar-toggle" data-toggle="offcanvas">Cancel</a>
+<a id="goBack" class="pull-right abort web" onclick="cancelForm();">Cancel</a>
+
+</div> <!-- Buttons -->
+</aside>
+
+
+<div class="clearfix"></div>
+
+
+<input type="hidden" name="txtBankID" value="">
+<input type="hidden" name="txtItemCode" value="">
+<input type="hidden" name="paymentMode" value="">
+<input type="hidden" name="reqid"  value="cc_selectall">
+<input type="hidden" name="paymentid" value="">
+<input type="hidden" name="ipaddress" value="NA">
+<input type="hidden" name="hidRequestId" value='PGIME1000'>
+<input type="hidden" name="hidOperation" value='ME100'>
+<input type="hidden" name="msg" id="msg" value='KERALARTC|KL305188|NA|423.00|NA|NA|NA|INR|NA|R|keralartc|NA|NA|F|K509591|Ebooking|jsessionid=479C0CDB0F6B81A2641EB81FCD6D019E|0|06/05/2015|NA|NA|http://www.keralartc.in/KERALAOnline/confirmPayment.do;jsessionid=479C0CDB0F6B81A2641EB81FCD6D019E|9654E7ACE8E949E9ADD733C372F00B3679C436ACFF69915A03178044712986AB'>
+<input type="hidden" name="csmsg" id="csmsg" value='null'>
+
+
+ <span class="disbankSpan" name="disabledBank1" data-desc="PNB Debit Card payment option is currently not available. Please make payment using different payment option."  data-bankid="PDC"></span>
+
+ <span class="disbankSpan" name="disabledBank2" data-desc="RuPay Card payment option is currently not available. Please make payment using different payment option."  data-bankid="URP"></span>
+
+ <span class="disbankSpan" name="disabledBank3" data-desc="Credit/Debit Card payment option is currently not available. Please make payment using different payment option."  data-bankid="SMP"></span>
+
+ <span class="disbankSpan" name="disabledBank4" data-desc="Credit/ Debit Card payment option is currently not available. Please make payment using different payment option."  data-bankid="UPG"></span>
+
+
+
+
+
+<div class="modal fade" tabindex="-1" role="modal" aria-hidden="true"></div>
+</div> <!-- .main-container class div ends -->
+</div> <!-- .row class div ends -->
+</div> <!-- .wrapper class div ends -->
+</div> <!-- .container class div ends -->
+
+<!-- Modal -->
+<div class="clearfix"></div>
+<div id="poweredbybilldesk" class="col-md-12 modal-footer"><img src="../pgmerc/bdqp/resources/images/billdesk-logo.png" alt="Powered by BillDesk"></div>
+
+</form>
+
+<!--<script src="../../pgmerc/bdqp/resources/scripts/lib/bootstrap.min.js"></script>-->
+<script src="../pgmerc/bdqp/resources/scripts/BDCommone7f0.js?ver=1.3.1"></script>
+</body>
+
+<!-- Mirrored from pgi.billdesk.com/pgidsk/ProcessPayment;jsessionid=0000DTnU4GsIraiuc3U_W_DAmil:17lenr4ap?wpage=Pdb7FXoIhibP3jnXYgWpiQkv by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 May 2015 06:52:25 GMT -->
+</html>

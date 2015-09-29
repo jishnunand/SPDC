@@ -1,0 +1,47 @@
+<%@page  import="java.io.BufferedReader"%>
+<%@page import= "java.io.File" %>
+<%@page import="java.io.FileReader" %>
+<%@page import="java.util.Calendar" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+			/* File file = new File("C:/inputsms.txt");
+			FileReader fileReader = new FileReader(file);
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+			StringBuffer stringBuffer = new StringBuffer();
+			String line;
+			while ((line = bufferedReader.readLine()) != null) {
+				System.out.println(stringBuffer.append(line));
+				stringBuffer.append("\n");
+			}
+			fileReader.close();
+			System.out.println("Contents of file:");
+			System.out.println(stringBuffer.toString()); */
+			FileReader fr = new FileReader("C:/inputsms.txt");
+			BufferedReader br = new BufferedReader(fr);
+
+			String line = br.readLine();
+			while (line != null) {
+				String[] parts = line.split(" ");
+				/* for (String w : parts) {
+					System.out.println(w);
+				} */
+				System.out.println(parts[0]);
+				System.out.println(parts[1]);
+				line = br.readLine();
+			}
+			Calendar c = Calendar.getInstance();
+			int year = c.get(Calendar.YEAR);
+			int month = c.get(Calendar.MONTH);
+			System.out.println(year);
+			System.out.println(month);
+%>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+pgi.billdesk.com	TRUE	/	FALSE	1999999999	AKAMAI	BD5_62_4443
+masterpass.com	TRUE	/	FALSE	1999999999	NSC_nbtufsqbtt-dtw-iuuqt	ffffffff099ee85845525d5f4f58455e445a4a4218dd
+
